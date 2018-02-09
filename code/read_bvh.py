@@ -389,49 +389,7 @@ def check_length(one_frame_train_data):
     
     
 
-#print get_child_list(skeleton, 'rHand')
-        
-#bvh_data=get_bvh_format_data(new_train_data,w_dic,0.01)
 
-#print "write_data"
-#bvh_format=get_frame_format_string(bvh_file)
-
-#write_bvh_file(martial_folder+"01_new.bvh",bvh_format,bvh_data)
-
-
-#bvh_file="01.bvh"
-#data=get_train_data(bvh_file)
-#write_to_bvh_file("03_2.bvh", data)
-#m=visualize_whole_seq(data[3689:3719])
-#cv.imwrite("motion.png",m)
-
-def make_data():
-	folders = ["indian/"]
-
-	for folder in folders:
-    
-
-	    bvh_folder="/home/zimo/Documents/ZY/Train_Data/train_data_bvh/"+ folder 
-	    xyz_folder="/home/zimo/Documents/ZY/Train_Data/train_data_xyz_fixed/"+folder
-	    dance_files=os.listdir(bvh_folder)
-	    dances=[]
-	    for dance_file in dance_files:
-	        if os.path.isfile(xyz_folder+dance_file+".npy"):
-	            continue;
-	        print ("load "+dance_file)
-	        dance=get_train_data(bvh_folder+dance_file)              
-	        dances=dances+[dance]
-	        print (dance)
-	        input(' ')
-	        #visualize_seq_to_video(xyz_folder+dance_file+".avi", dance)
-	        #visualize_seq_to_bvh(xyz_folder+dance_file+".bvh", dance)
-	        np.save(xyz_folder+dance_file, dance)
-
-def save_mat_data(data, output_folder):
-	for i in range(len(data['all_data'])):
-		filename = output_folder + '/' + str(i) + '.npy'
-		np.save(filename, data['all_data'][i][0])
-		print (i)
 		
 
 

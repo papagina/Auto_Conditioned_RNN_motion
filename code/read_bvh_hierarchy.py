@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Feb 27 18:10:15 2017
 
-@author: zimoli
-"""
 import re
 from collections import OrderedDict
 

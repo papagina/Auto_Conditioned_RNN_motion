@@ -1,14 +1,4 @@
-# uncompyle6 version 2.14.1
-# Python bytecode 2.7 (62211)
-# Decompiled from: Python 3.4.3 (default, Nov 17 2016, 01:08:31) 
-# [GCC 4.8.4]
-# Embedded file name: rotation2xyz.py
-# Compiled at: 2017-04-04 19:41:31
-"""
-Created on Mon Feb 27 18:15:02 2017
 
-@author: zimoli
-"""
 import numpy as np, math, re
 from collections import OrderedDict
 import matplotlib.pyplot as plt
